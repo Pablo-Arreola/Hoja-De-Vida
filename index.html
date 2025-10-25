@@ -4,24 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hoja de Vida | Pablo Arreola</title>
-    <link rel="stylesheet" href="css/styles.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/styles.css" />
     <script defer src="js/script.js"></script>
   </head>
 
   <body>
-    <!-- 🟦 Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+    <!-- 🔵 Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow bg-gradient-primary">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="#inicio">Pablo Arreola</a>
+        <a class="navbar-brand fw-bold text-uppercase" href="#inicio">Pablo Arreola</a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
+          aria-label="Abrir menú de navegación"
+          title="Abrir menú"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -37,20 +39,29 @@
       </div>
     </nav>
 
-    <!-- 🟢 Sección Inicio -->
-    <section id="inicio" class="d-flex align-items-center justify-content-center text-center text-light">
+    <!-- 🟦 Inicio -->
+    <section id="inicio" class="d-flex align-items-center justify-content-center text-center text-light hero">
       <div class="content">
-        <img src="img/foto-pablo.jpg" alt="Pablo Arreola" class="foto-perfil" />
-        <h1 class="mt-3">Pablo Raúl Arreola Contreras</h1>
+        <img src="img/foto-pablo.png" alt="Pablo Arreola" class="foto-perfil shadow" />
+        <h1 class="mt-3 fw-bold">Pablo Raúl Arreola Contreras</h1>
         <p class="lead">Estudiante de Ingeniería en Sistemas | Desarrollador Web</p>
-        <a href="CV_PABLO_ARREOLA_2025.pdf" class="btn btn-primary mt-3" download>📄 Descargar CV</a>
+
+        <!-- 🔗 Botón funcional del CV -->
+        <a
+          href="CV PABLO ARREOLA 2025.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-cv mt-3"
+        >
+          📄  VER CV
+        </a>
       </div>
     </section>
 
     <!-- 👤 Perfil -->
     <section id="perfil" class="py-5 bg-light">
       <div class="container">
-        <h2 class="text-center mb-4">Perfil Profesional</h2>
+        <h2 class="text-center mb-4 text-primary fw-bold">Perfil Profesional</h2>
         <p class="text-center fs-5">
           Estudiante de Ingeniería en Sistemas con sólidos conocimientos en desarrollo web y de software.
           Manejo de lenguajes como C, C++, C#, JavaScript, React y SQL Server, además del uso de contenedores con Docker.
@@ -59,18 +70,18 @@
     </section>
 
     <!-- 🎓 Formación -->
-    <section id="formacion" class="py-5">
+    <section id="formacion" class="py-5 section-gradient">
       <div class="container">
-        <h2 class="text-center mb-4">Formación Académica</h2>
+        <h2 class="text-center mb-4 text-light fw-bold">Formación Académica</h2>
         <div class="row justify-content-center">
-          <div class="col-md-6">
-            <div class="card p-3 shadow-sm">
+          <div class="col-md-5 mb-3">
+            <div class="card glass-card text-light p-3 shadow-sm border-0">
               <h5>Universidad Mariano Gálvez de Guatemala</h5>
               <p>Ingeniería en Sistemas de Información y Ciencias de la Computación (8.º semestre, 2025)</p>
             </div>
           </div>
-          <div class="col-md-6 mt-3 mt-md-0">
-            <div class="card p-3 shadow-sm">
+          <div class="col-md-5 mb-3">
+            <div class="card glass-card text-light p-3 shadow-sm border-0">
               <h5>Colegio Santa Familia SR</h5>
               <p>Bachiller en Computación con Orientación en Lenguajes</p>
             </div>
@@ -82,10 +93,10 @@
     <!-- 💼 Proyectos -->
     <section id="proyectos" class="py-5 bg-light">
       <div class="container">
-        <h2 class="text-center mb-4">Proyectos Destacados</h2>
+        <h2 class="text-center mb-4 text-primary fw-bold">Proyectos Destacados</h2>
         <div class="row g-4">
           <div class="col-md-6 col-lg-3">
-            <div class="card project-card">
+            <div class="card project-card text-center">
               <div class="card-body">
                 <h5>Gestor de Tareas en .NET</h5>
                 <p>App web creada con .NET y SQL Server.</p>
@@ -93,7 +104,7 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
-            <div class="card project-card">
+            <div class="card project-card text-center">
               <div class="card-body">
                 <h5>App de Recursos Humanos</h5>
                 <p>Aplicación responsiva conectada a API REST.</p>
@@ -101,7 +112,7 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
-            <div class="card project-card">
+            <div class="card project-card text-center">
               <div class="card-body">
                 <h5>Chatbot Tecnológico</h5>
                 <p>Asistente basado en IA con Flask y OpenAI API.</p>
@@ -109,7 +120,7 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
-            <div class="card project-card">
+            <div class="card project-card text-center">
               <div class="card-body">
                 <h5>Página Vocacional</h5>
                 <p>Plataforma informativa con HTML, CSS y JS.</p>
@@ -121,9 +132,9 @@
     </section>
 
     <!-- ⚙️ Habilidades -->
-    <section id="habilidades" class="py-5">
-      <div class="container text-center">
-        <h2 class="mb-4">Habilidades Técnicas</h2>
+    <section id="habilidades" class="py-5 text-center section-gradient text-light">
+      <div class="container">
+        <h2 class="mb-4 fw-bold">Habilidades Técnicas</h2>
         <div class="skills-grid">
           <span>HTML5</span>
           <span>CSS3</span>
@@ -138,10 +149,10 @@
     </section>
 
     <!-- 📬 Contacto -->
-    <section id="contacto" class="py-5 bg-dark text-light">
+    <section id="contacto" class="py-5 bg-light">
       <div class="container">
-        <h2 class="text-center mb-4">Contacto</h2>
-        <form id="contactForm" class="mx-auto" style="max-width:600px;">
+        <h2 class="text-center mb-4 text-primary fw-bold">Contacto</h2>
+        <form id="contactForm" class="mx-auto form-container bg-white p-4 rounded shadow">
           <div class="mb-3">
             <input type="text" id="nombre" class="form-control" placeholder="Nombre completo" required />
           </div>
@@ -151,17 +162,24 @@
           <div class="mb-3">
             <textarea id="mensaje" class="form-control" rows="4" placeholder="Tu mensaje..." required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button>
+          <button type="submit" class="btn btn-cv w-100">Enviar Mensaje</button>
         </form>
         <div class="text-center mt-4">
           <p>📧 Parreolac7@gmail.com | 📱 35473969 | 📍 Cuilapa, Santa Rosa</p>
-          <a href="https://portafolio-pablo-arreola-26dv.vercel.app" class="text-info" target="_blank">🌐 Ver Portafolio</a>
+          <a
+            href="https://portafolio-pablo-arreola-26dv.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link-cyan"
+          >
+            🌐 Ver Portafolio Personal
+          </a>
         </div>
       </div>
     </section>
 
     <!-- 🧾 Footer -->
-    <footer class="text-center py-3 bg-secondary text-light">
+    <footer class="text-center py-3 bg-gradient-primary text-light">
       <small>© 2025 Pablo Arreola — Todos los derechos reservados</small>
     </footer>
 

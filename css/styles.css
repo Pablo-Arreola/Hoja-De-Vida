@@ -1,0 +1,107 @@
+body {
+  scroll-behavior: smooth;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #001f3f, #00bcd4);
+  height: 100vh;
+}
+
+.foto-perfil {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid #00ffff;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.foto-perfil:hover {
+  transform: scale(1.05);
+}
+
+/* Botón CV */
+.btn-cv {
+  background: linear-gradient(90deg, #007bff, #00bcd4);
+  border: none;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-cv:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #00bcd4, #007bff);
+}
+
+/* Gradiente general */
+.section-gradient {
+  background: linear-gradient(135deg, #007bff, #00bcd4);
+}
+
+/* Navbar */
+.bg-gradient-primary {
+  background: linear-gradient(90deg, #001f3f, #007bff);
+}
+
+/* Tarjetas transparentes */
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(6px); /* 🔹 soporte para Safari / iOS */
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+}
+
+
+/* Proyectos */
+.project-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 15px;
+  background: white;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 188, 212, 0.3);
+}
+
+/* Habilidades */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.skills-grid span {
+  background: #00bcd4;
+  color: #001f3f;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.skills-grid span:hover {
+  background: #007bff;
+  color: white;
+}
+
+/* Formulario */
+.form-container {
+  max-width: 600px;
+}
+
+/* Enlaces cyan */
+.link-cyan {
+  color: #00bcd4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link-cyan:hover {
+  text-decoration: underline;
+  color: #007bff;
+}
